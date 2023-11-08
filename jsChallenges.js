@@ -1,58 +1,56 @@
-//color of the day: Coral - Bhavya
+// Color of the Day: Coral <Cassidy Petersen>
 
-//Traditional Way of modifying HTML
-// function challenge1(){
-//     //Fetch the value of the Checkbox
-//     if (document.getElementById("subscribe").checked == true){
-//         //See if it is checked
-//         document.querySelector("#emailDiv").style.display = "initial";
-//         //Change the email field Accordingly
-//     } else {
+
+// This is done by changing the HTML file
+// function challenge1() {
+//     //Fetch the vaule of the checkbox 
+//     // see if it is checked
+//     // change the email field accordingly
+
+//     let checkBox = document.getElementById("subscribe").checked;
+//     if (checkBox){ 
+//         document.querySelector("#emailDiv").style.display = "block";
+//     } else { 
 //         document.querySelector("#emailDiv").style.display = "none";
 //     }
 // }
 
+// By adding Event Listener
+// let varCheckbox = document.getElementById("subscribe");
 
-// function challenge2(){
-//     if (document.getElementById("sameAddress").checked == true){
-//         console.log("this works")
-//         console.log(document.querySelector("#bill").textarea);
-//         document.querySelector("#home").value = document.querySelector("#bill").value;
+// varCheckbox.addEventListener("click",function() {
+//     if (varCheckbox.checked) {
+//         document.querySelector("#emailDiv").style.display = "block";
+//     } else {
+//         document.querySelector("#emailDiv").style.display = "none";
 //     }
-//     else{
-//         document.querySelector("#home").value = prompt("Enter Billing Address");
-//     }
-// }
 
-// Challenge 1
-let varCheckBox = document.getElementById("subscribe");
-varCheckBox.addEventListener("click", function(){
+// });
 
-    if(varCheckBox.checked ==true){
-        document.querySelector("#emailDiv").style.display = "initial";
-    } else{
-        document.querySelector("#emailDiv").style.display = "none";   
-    }
-});
+// Challenge 2
+let SameAsAbove = document.getElementById("sameAddress");
 
-
-//Challenge 2
-let varSameAsAbove = document.getElementById("sameAddress");
-
-varSameAsAbove.addEventListener("click", function(){
-
-    if(varSameAsAbove.checked == true){
-        console.log("this works")
+SameAsAbove.addEventListener("click",function() {
+    if (SameAsAbove.checked == true) {
         document.querySelector("#home").value = document.querySelector("#bill").value;
-    } else{
-        document.querySelector("#home").value = prompt("Enter Billing Address");  
+    } else {
+        document.querySelector("#home").value = prompt("Enter Billing Address");
     }
+
 });
 
-// function challenge3(){
-// if (form.querySelector("input[type=radio]:checked"));
-// var value;
-// if (!checked) {
-//     alert("You need to select one of the options");
-// }
-// }
+// Challenge 3
+let SameAsAbove = document.getElementById("sameAddress");
+
+SameAsAbove.addEventListener("click",function() {
+    if (SameAsAbove.checked == true) {
+        document.querySelector("#home").value = document.querySelector("#bill").value;
+    } else {
+        document.querySelector("#home").value = prompt("Enter Billing Address");
+    }
+
+});
+
+
+
+
